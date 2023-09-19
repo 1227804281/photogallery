@@ -1,0 +1,354 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* End of CSS reset :D */
+/* my CSS now. Mobile First */
+html {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 485px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+h1{
+    padding: 10px;
+}
+
+h1 a {
+    font-size: 3em;
+    color: #007d7b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1 a:hover {
+    color: #000000;
+}
+
+nav {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav h2, legend {
+    display: none;
+    height: 1px;
+}
+
+nav a:hover {
+    color:#007d7b
+}
+
+nav li {
+    display: inline-flex;
+    padding: 10px;
+}
+
+nav a {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+[href="#top"] {
+    background-color: #000000;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #ffffff;
+}
+
+section h2 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+}
+
+section p {
+    font-size: 1.25em;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+figure {
+    text-align: center;
+    padding: 10px;
+}
+
+figcaption {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+figure:nth-of-type(odd):not(:nth-of-type(5)):not(:nth-of-type(2n+9)) figcaption, figure:nth-of-type(6) figcaption {
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.top {
+    margin-top: -265px;
+    margin-bottom: 255px;
+}
+
+.tall {
+    margin-top: -615px;
+    margin-bottom: 600px;
+}
+
+.white {
+    color: #ffffff;
+}
+
+#contact {
+    color:#ffffff;
+    background-color:#000000;
+    
+}
+#contact p {
+    text-align: center;
+}
+
+label {
+    font-size: 1em;
+    display: block;
+    text-transform: uppercase;
+    padding-left: 10px;
+    margin-bottom: 2px;
+}
+
+input {
+    width: 465px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+[placeholder] {
+    text-transform: uppercase;
+    color: #007d7b;
+    font-weight: bold;
+    padding: 10px 0 10px 10px;
+}
+
+[type="submit"] {
+    width: 200px;
+    background-color: #007d7b;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-left: 150px;
+    border-radius: 10px;
+    border: none;
+}
+
+[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #007d7b;
+    cursor: pointer;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 30px 0 10px 0;
+}
+
+
+/* Mobile moments over. Medium Media Query Now*/
+@media screen and (min-width:880px) {
+    body {
+        width: 880px;
+    }
+
+    #highlights {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    input {
+        width: 870px;
+    }
+
+    [type="submit"] {
+        width: 300px;
+        padding: 5px;
+        margin-left: 300px;
+    }
+}
+
+/* Large Screen */
+@media screen and (min-width:1300px) {
+    body {
+        width: 1300px;
+    }
+    nav {
+        text-align: right;
+    }
+
+    #highlights {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    figure {
+        padding: 0;
+    }
+
+    input {
+        width: 1290px;
+    }
+    [type="submit"] {
+        width: 450px;
+        padding: 5px;
+        margin-left: 420px;
+    }
+}

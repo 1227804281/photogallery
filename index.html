@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="a portfolio website for TK Photography">
+    <meta name="keywords" content="portfolio, contact, TK Photgraphy">
+    <meta name="author" content="Allen Jordan">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>TK Photography</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="#">TK Photography</a></h1>
+        <nav>
+            <h2>Main Navigation</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#top">top</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Hello!</p>
+            <p>I’m TK and I’m a photographer.
+                I love looking at life through the lens of my camera.
+                Landscape photography is my speciality and it’s taken
+                me all over the world.</p>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+            <div id="highlights">
+                <figure class="white">
+                    <img src="images/Chile.png" alt="a scenic photograph of a coastline during sunset">
+                    <figcaption class="bottom">Chile, 2001</figcaption>
+                </figure>
+                <figure class="white">
+                    <img src="images/Guatemala.png"
+                        alt="a scenic photograph of a lake during sunset. in the foreground theres purple flowers surrounding a path to a dock">
+                    <figcaption class="top">Guatemala, 1997</figcaption>
+                </figure>
+                <figure class="white">
+                    <img src="images/Hawaii.png" alt="a scenic photograph of mountains from an overhead view">
+                    <figcaption class="bottom">Hawaii, 2010</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Iran.png" alt="a scenic photograph of short grasses with hills in the background">
+                    <figcaption class="tall">Iran, 1999</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Ireland.png" alt="a scenic photograph of green rolling hills">
+                    <figcaption class="tall">Ireland, 2012</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Italy.png"
+                        alt="a scenic photograph of a large mountain with a river in the foreground">
+                    <figcaption class="bottom">Italy, 2015</figcaption>
+                </figure>
+                <figure class="white">
+                    <img src="images/Moab-Desert.png" alt="a scenic photograph of a canyon during sunset">
+                    <figcaption class="bottom">Moab Desert, 2020</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Rocky-Mountains.png"
+                        alt="a scenic photograph of a unique rock formation on a cloudy day">
+                    <figcaption class="top">Rocky Mountains, 2009</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Switzerland.png" alt="a scenic photograph of a mountainous region during the day">
+                    <figcaption class="top">Switzerland, 2014</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/UK.png" alt="a scenic photograph of a valley">
+                    <figcaption class="top">UK, 2005</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/USA.png"
+                        alt="a scenic photograph of a field. yellow and red flowers pepper the foreground">
+                    <figcaption class="top">USA, 2021</figcaption>
+                </figure>
+                <figure class="white">
+                    <img src="images/Wyoming.png" alt="a scenic photograph of pond surrounded by coniferous trees">
+                    <figcaption class="top">Wyoming, 2021</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="contact">
+            <form method="get">
+                <h2>Contact</h2>
+                <p>Please fill out this form and I’ll connect with you soon.</p>
+                <fieldset>
+                    <legend>Your contact information</legend>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message" placeholder="What can I help you with?" required>
+                    <input type="submit" id="submit" name="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <small>Copyright 2021 TK Photography</small>
+    </footer>
+</body>
+
+</html>
